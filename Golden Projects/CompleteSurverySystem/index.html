@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Complete Survey Form</h1>
+
+      <form id="form">
+        <div class="form-control">
+          <label for="name" id="label-name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-control">
+          <label for="email" id="label-email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="phone" id="label-phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="role" id="label-role"
+            >Which option best describes you?</label
+          >
+          <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label>Would you recommend CodeClause to a friend?</label>
+          <div class="radio-options">
+            <label for="recommend-yes">
+              <input
+                type="radio"
+                id="recommend-yes"
+                name="recommend"
+                value="yes"
+                required
+              />Yes
+            </label>
+            <label for="recommend-no">
+              <input
+                type="radio"
+                id="recommend-no"
+                name="recommend"
+                value="no"
+              />No
+            </label>
+            <label for="recommend-maybe">
+              <input
+                type="radio"
+                id="recommend-maybe"
+                name="recommend"
+                value="maybe"
+              />Maybe
+            </label>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label>Projects you have worked on:</label>
+          <div class="checkbox-options">
+            <label for="project-1">
+              <input
+                type="checkbox"
+                id="project-1"
+                name="projects[]"
+                value="Project 1"
+              />Project 1
+            </label>
+            <label for="project-2">
+              <input
+                type="checkbox"
+                id="project-2"
+                name="projects[]"
+                value="Project 2"
+              />Project 2
+            </label>
+            <label for="golden-project-1">
+              <input
+                type="checkbox"
+                id="golden-project-1"
+                name="projects[]"
+                value="Golden Project 1"
+              />Golden Project 1
+            </label>
+            <label for="golden-project-2">
+              <input
+                type="checkbox"
+                id="golden-project-2"
+                name="projects[]"
+                value="Golden Project 2"
+              />Golden Project 2
+            </label>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="comment">Any comments or suggestions</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Enter your comment here"
+          ></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
